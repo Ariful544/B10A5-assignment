@@ -25,9 +25,12 @@ function historyDonation(event){
 btnDonationNowEl.addEventListener('click', (event)=>{
     event.preventDefault();
     console.log(event);
+    const modal = document.getElementById('my_modal_1');
     if(isNaN(parseFloat(donationAmountEl.value)) || parseFloat(donationAmountEl.value) < 0){
         alert("invalid input");
         donationAmountEl.value = ''; 
+        modal.style.display = 'none';
+        location.reload();
 
     }
     else{
@@ -42,7 +45,8 @@ btnDonationNowEl.addEventListener('click', (event)=>{
         historyCardEl.innerHTML +=` <div class="card p-8 bg-base-100 border border-neutral-300 shadow-lg">
                     <h3 class="px-2">${amount} Taka is Donated for Flood at Noakhali, Bangladesh</h3>
                     <p class="mt-4 bg-slate-100 px-2 rounded-lg py-4">Date: ${Date()}</p>
-                </div>`
+                </div>`;
+                
     }
 
 });
