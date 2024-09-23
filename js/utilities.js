@@ -4,3 +4,13 @@ function showSectionById(id){
 
     document.getElementById(id).classList.remove('hidden');
 }
+
+    function getInputValueByID(id){
+        let inputValue = parseFloat(document.getElementById(id).value);
+        return inputValue;
+    }
+
+    function getTotalDonateValueByID(id){
+        let totalDonateValue = parseFloat(document.getElementById(id).innerText);
+        return totalDonateValue;
+    }
