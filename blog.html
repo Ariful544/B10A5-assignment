@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Donate Bangladesh</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                    },
+                    fontFamily: {
+                        lexend: ["Lexend", "system-ui"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class=" font-lexend relative">
+    <header class=" bg-white/50 backdrop-blur-md sticky top-0 left-0 w-full z-50 ">
+        <div class="bg-stone-50/50 backdrop-blur-md ">
+            <nav class="pb-6 pt-4 px-4 lg:px-0 max-w-screen-xl mx-auto">
+                <div class="navbar ">
+                    <div class="navbar-start">
+
+                        <a href="./index.html"
+                            class="btn px-6 bg-primary hover:bg-lime-400 text-neutral-900 font-semibold text-xl">Home</a>
+                    </div>
+                    <div class="navbar-center gap-2 flex justify-center items-center">
+                        <img width="30" src="./assets/logo.png" alt="">
+                        <h1 class="text-neutral-900 text-xl font-semibold hidden lg:block">Donate Bangladesh</h1>
+                    </div>
+                    <div class="navbar-end flex gap-2">
+                        <img width="20" height="20" src="./assets/coin.png" alt="">
+                        <p class="text-xl font-medium text-neutral-900 text-opacity-70"><span
+                                id="available-balance">5500.00</span> BDT</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="pt-10 pb-28 px-4 lg:px-0 max-w-screen-xl mx-auto">
+        <section class="flex flex-col">
+            <div class="collapse collapse-plus rounded-t-md rounded-b-none bg-base-200 border-2 border-b-0 border-neutral-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus rounded-t-none rounded-b-none bg-base-200 border-2 border-b-0 border-neutral-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus rounded-t-none rounded-b-md bg-base-200 border-2 border-neutral-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
